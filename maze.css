@@ -1,0 +1,106 @@
+html, body {
+  display: block;
+  height: 100%;
+  width: 100%;
+  min-height: 520px;
+  min-width: 300px;
+  margin: 0px;
+}
+
+.maze {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.maze-options {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  min-height: 50px;
+  min-width: 300px;
+}
+
+.maze-canvas {
+  display: block;
+  height: calc(100% - 50px);
+  width: 100%;
+  min-height: 500px;
+  min-width: 300px;
+  margin: auto;
+  background-color: rgba(0,0,0,0);
+}
+
+.maze-canvas-background {
+  height: calc(100% - 50px);
+  width: 100%;
+  background-image: url("resources/background.png");
+  background-size: cover;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: -1;
+}
+
+.maze-options .maze-dimension-container {
+  display: flex;
+  height: 20px;
+  width: 50%;
+}
+
+.maze-options .maze-buttons-container {
+  display: flex;
+  height: 20px;
+  width: 50%;
+}
+
+.dimension-label {
+  display: inline-block;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.dimension-input {
+  display: inline-block;
+  height: 100%;
+}
+
+.maze-dimension {
+  display: inline-block;
+  height: 80%;
+}
+
+.maze-buttons-container .create,
+.maze-buttons-container .draw,
+.maze-buttons-container .reset{
+  display: inline-flex;
+  height: 100%;
+  border: 0px;
+  color: #FFFFFF;
+  background-color: rgb(124, 143, 201);
+}
+
+.maze-buttons-container .create{
+  margin-left: 5px;
+}
+
+.maze-buttons-container .reset{
+  margin-left: 25px;
+}
+
+.maze-canvas .element{
+  opacity: 0.6;
+}
+
+.maze-canvas .element.initial {
+  display: block;
+  float: left;
+  border: 0.5px solid black;
+  background-color: red;
+}

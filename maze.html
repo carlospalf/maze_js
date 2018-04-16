@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Javascript Maze generator</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="maze.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="maze.js"></script>
+</head>
+<body>
+  <div class="maze">
+    <div class="maze-options">
+      <div class="maze-dimension-container">
+        <span class="dimension-label">Dimension: </span>
+        <input class="dimension-input" type="number" class="maze-dimension" min="10" max="100" value="10"/>
+      </div>
+      <div class="maze-buttons-container">
+        <button class="draw" onclick="draw()">Draw</button>
+        <button class="create" onclick="alert('create.');">Create</button>
+        <button class="reset" onclick="reset()">Reset</button>
+      </div>
+    </div>
+    <div class="maze-canvas"></div>
+    <div class="maze-canvas-background"></div>
+  </div>
+</body>
+</html>
